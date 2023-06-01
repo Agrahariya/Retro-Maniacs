@@ -1,0 +1,1009 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>quiz</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&amp;display=swap" rel="stylesheet"><style> @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap'); </style>
+        <style> @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap'); </style>
+        <style>
+        .headTitle{
+        
+            position: absolute;
+            top: 10px;
+            left: 9px;
+            right: 9px;
+            background: linear-gradient(45deg, transparent,#0000001a, #0000003d);
+            box-shadow: 5px 5px 10px 2px;
+        }
+        ul li {
+            float: left;
+            color: white;
+            list-style-type: none;
+            padding: 3em;
+            font-weight: 500;
+            font-size: 18px;
+            width: 10em;
+            text-align: center;
+            transition: linear 0.25s;
+        font-family: 'Prosto One', cursive;
+        }
+        
+        
+        ul li:hover {
+            background: black;
+            border-radius: 60px 1px 60px 1px;
+        cursor: pointer;
+        text-align:center;
+        padding:47px;
+            font-size: 20px;    
+        }
+        .gameMenu {
+            position: absolute;
+            background: transparent;
+            width: 10em;
+            translate: -33%;
+            display: none;
+        
+        }
+        .gameMenuText{
+            transition: all 0.5s linear;
+            padding: 1em;
+        background:white;
+        color: black;
+        }
+        .gameMenuText:hover{
+            background:black;
+            color: white;
+            border-radius: 30px;
+        }
+        h1{
+            margin: 0;
+        }
+        </style>
+              <style>
+            @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
+          </style>
+          <style>
+            body {
+              margin: 0px;
+              background-color: black;
+            }
+        
+            .gameCard {
+              height: 370px;
+              width: 350px;
+              background-image: url("https://images.unsplash.com/photo-1595744043037-68de3376ed59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80");
+              background-size: cover;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: all 0.1s linear;
+              opacity: 1;
+              transform: rotateX(1deg) rotateY(-35deg);
+              box-shadow: 0px 0px red, 0px 0 2.4em 4px #663399;
+              background-blend-mode: luminosity;
+        margin-bottom:90px;
+            }
+        
+            .gameCard:nth-child(1) {
+              background-image: url("https://bit.ly/3vtP03b"), linear-gradient(rgb(102 51 153), rgb(153 51 127), rgb(255 0 102));
+            }
+        .gameCard:nth-child(2) {
+              background-image: url("https://bit.ly/3vtP03b"), linear-gradient(rgb(102 51 153), rgb(153 51 127), rgb(255 0 102));
+            }
+        .gameCard:nth-child(3) {
+              background-image: url("https://bit.ly/3vtP03b"), linear-gradient(rgb(102 51 153), rgb(153 51 127), rgb(255 0 102));
+            }
+        .gameCard:nth-child(4) {
+              background-image: url("https://bit.ly/3vtP03b"), linear-gradient(rgb(102 51 153), rgb(153 51 127), rgb(255 0 102));
+            }
+        .gameCard:nth-child(5) {
+              background-image: url("https://bit.ly/3vtP03b"), linear-gradient(rgb(102 51 153), rgb(153 51 127), rgb(255 0 102));
+            }
+        .gameCard:nth-child(6) {
+              background-image: url("https://bit.ly/3vtP03b"), linear-gradient(rgb(102 51 153), rgb(153 51 127), rgb(255 0 102));
+            }
+        .gameCard:nth-child(7) {
+              background-image: url("https://bit.ly/3vtP03b"), linear-gradient(rgb(102 51 153), rgb(153 51 127), rgb(255 0 102));
+            }
+        .gameCard:nth-child(8) {
+              background-image: url("https://bit.ly/3vtP03b"), linear-gradient(rgb(102 51 153), rgb(153 51 127), rgb(255 0 102));
+            }
+        .gameCard:nth-child(9) {
+              background-image: url("https://bit.ly/3vtP03b"), linear-gradient(rgb(102 51 153), rgb(153 51 127), rgb(255 0 102));
+            }
+        
+        
+            .gameCard:hover {
+        cursor: pointer;
+            }
+        
+            .gameCardText {
+              color: white;
+              padding: 1em;
+              box-sizing: border-box;
+              font-family: 'Unbounded', cursive;
+              font-size: 35px;
+              scale: 1;
+              transition: all 0.2s linear;
+            }
+        
+            .gameCard:hover .gameCardText {
+              scale: 1.2;
+            }
+              .game_card {
+        
+                    display: inline-block;
+                    margin-left: 6px;
+                    overflow: hidden;
+                    border-radius: 7px;
+                    color: white;
+                    display: inline-block;
+                    margin-left: 45px;
+                    margin-top: 80px;
+                    border-radius: 10px;
+                    width: 270px;
+                    height: 340px;
+        
+        
+        
+        
+                }
+        
+                .rcard {
+        
+                    text-align: center;
+                    background: linear-gradient(45deg, #fc00ff, #00dbde);
+                    position: relative;
+                    background: #00000066;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                    bottom: 59px;
+                    transition: 0.2s linear;
+                    height: 110px;
+                    padding: 8% 0px;
+        
+                }
+        
+                .game_card:hover {
+                    transition: 0.3s linear;
+                    transform: scale(1.09);
+                }
+        
+                .game_card:hover .rcard {
+                    height: 255px;
+                    bottom: 400px;
+                    padding: 41% 0px;
+                    display: flex;
+            flex-direction: column;
+            justify-content: center;
+                }
+              a{
+                  color: white;
+              }
+              .cardContainer{
+                display: flex;
+                flex-direction: row;
+                padding-right: 70px;
+                justify-content: space-evenly;
+        
+              }
+              
+        </style>
+        
+        
+        <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html, body{
+        height: 100%;
+    }
+    
+    
+    body{
+        font-family: 'Montserrat', serif;
+    
+    }
+    
+    main{
+        width: 100%;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        background: url(https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg?w=2000);
+        
+        background-color : black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .game-quiz-container{
+        width: 40rem;
+        height: 30rem;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 30px;
+        backdrop-filter: blur(10px);
+        color: white;
+    }
+    
+    .game-details-container{
+        width: 80%;
+        height: 4rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .game-details-container h1{
+        font-size: 1.2rem;
+    }
+    
+    .game-question-container{
+        width: 80%;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid darkgray;
+        border-radius: 25px;
+    }
+    
+    .game-question-container h1{
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 3px;
+    }
+    
+    .game-options-container{
+        width: 80%;
+        height: 12rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .game-options-container span{
+        width: 45%;
+        height: 3rem;
+        border: 2px solid darkgray;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    span label{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.3s;
+        font-weight: 600;
+        color: white;
+    }
+    
+    span label:hover{
+        -ms-transform: scale(1.12);
+        -webkit-transform: scale(1.12);
+        transform: scale(1.12);
+        color: black;
+        background-color: white;
+    }
+    
+    input[type="radio"] {
+        position: relative;
+        display: none;
+    }
+    
+    
+    input[type=radio]:checked ~ .option {
+        background: paleturquoise;
+    }
+    
+    .next-button-container{
+        width: 50%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+    .next-button-container button{
+        /* width: 8rem;
+        height: 2rem; */
+        border-radius: 10px;
+        background: none;
+        color: white;
+        font-weight: 600;
+        border: 2px solid gray;
+        cursor: pointer;
+        outline: none;
+        padding: 1em;
+    }
+    .next-button-container button:hover{
+        background-color: white;
+        color: black;
+    }
+    
+    .modal-container{
+        display: none;
+        position: fixed;
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        -webkit-animation: fadeIn 1.2s ease-in-out;
+        animation: fadeIn 1.2s ease-in-out;
+    }
+    
+    .modal-content-container{
+        height: 20rem;
+        width: 25rem;
+        background-color: rgb(43, 42, 42);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 25px;
+    }
+    
+    .modal-content-container h1{
+        font-size: 1.3rem;
+        height: 3rem;
+        color: lightgray;
+        text-align: center;
+    }
+    
+    .grade-details{
+        width: 15rem;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .grade-details p{
+        color: white;
+        text-align: center;
+    }
+    
+    .modal-button-container{
+        height: 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .modal-button-container button{
+        width: 10rem;
+        height: 2rem;
+        background: none;
+        outline: none;
+        border: 1px solid rgb(252, 242, 241);
+        color: white;
+        font-size: 1.1rem;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+    .modal-button-container button:hover{
+        background-color: rgb(83, 82, 82);
+    }
+    
+    @media(min-width : 300px) and (max-width : 350px){
+        .game-quiz-container{
+            width: 90%;
+            height: 80vh;
+         }
+         .game-details-container h1{
+            font-size: 0.8rem;
+         }
+    
+         .game-question-container{
+            height: 6rem;
+         }
+         .game-question-container h1{
+           font-size: 0.9rem;
+        }
+    
+        .game-options-container span{
+            width: 90%;
+            height: 2.5rem;
+        }
+        .game-options-container span label{
+            font-size: 0.8rem;
+        }
+        .modal-content-container{
+            width: 90%;
+            height: 25rem;
+        }
+    
+        .modal-content-container h1{
+            font-size: 1.2rem;
+        }
+    }
+    
+    @media(min-width : 350px) and (max-width : 700px){
+       .game-quiz-container{
+           width: 90%;
+           height: 80vh;
+        }
+        .game-details-container h1{
+            font-size: 1rem;
+        }
+    
+        .game-question-container{
+            height: 8rem;
+        }
+    
+        .game-question-container h1{
+            font-size: 0.9rem;
+         }
+    
+        .game-options-container span{
+            width: 90%;
+        }
+        .modal-content-container{
+            width: 90%;
+            height: 25rem;
+        }
+        .modal-content-container h1{
+            font-size: 1.2rem;
+        }
+    }
+    
+    
+    
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+    
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+    </style></head>
+    
+    
+    
+    <body onload="NextQuestion(0)">
+        <div style="
+        " class="headTitle">
+                <img src=".\RETRO MANIACS.png" style="
+            height: 123px;
+            float: left;
+            margin-top: 13px;
+            margin-left: 10px;
+        ">
+        <div style="float: right;margin-right: 4px;margin-bottom: 4px;">
+            <ul>
+                <a href="./new.html" target=""><li>
+                    Home
+                </li></a>
+                <!-- <li onmouseover="showGameMenu()" onmouseout="showGameMenu()">
+                    Games
+            <div class="gameMenu" style="display: none;">
+        
+    <div class="gameMenuText" onclick="adventure()">Adventure</div>
+    <div class="gameMenuText" onclick="arcade()">Arcade</div>
+    <div class="gameMenuText" onclick=" board()">Board</div>
+    <div class="gameMenuText" onclick="crazy()">Crazy</div>
+    <div class="gameMenuText" onclick="racing()">Racing</div>
+    <div class="gameMenuText" onclick="skills()">Skills</div>
+    <div class="gameMenuText" onclick="sports()">Sports</div>
+    <div class="gameMenuText" onclick="strategy()">Strategy</div><div class="gameMenuText" onclick="trivia()">Trivia</div>
+        
+    
+        </div>
+                </li> -->
+               <a href="./quiz.html" target="blank"> <li>
+                    Quiz
+                </li></a>
+               <a href="./about%20page.html" target="blank"><li>
+                    About
+                </li></a>
+               <a href="./feedback.html" target="blank"> <li style="
+            width: 194px;
+        ">
+                    Feedback
+                </li></a>
+            </ul>
+        </div>
+            </div>
+        <div style="
+        padding:1px;
+        background-image:url(https://img.freepik.com/free-photo/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_181624-9331.jpg?w=2000);
+        text-align: center;
+        font-family: 'Aref Ruqaa Ink', serif;
+        font-size: 16px;
+        background-repeat: no-repeat;
+    ">
+            
+        <main style="
+        margin-top: 10%;
+    ">
+            <!-- creating a modal for when quiz ends -->
+            <div class="modal-container" id="score-modal">
+    
+                <div class="modal-content-container">
+    
+                    <h1>Congratulations, Quiz Completed.</h1>
+    
+                    <div class="grade-details">
+                        <p>Attempts : 10</p>
+                        <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                        <p>Right Answers : <span id="right-answers"></span></p>
+                        <p>Grade : <span id="grade-percentage"></span>%</p>
+                        <p><span id="remarks"></span></p>
+                    </div>
+    
+                    <div class="modal-button-container">
+                        <button onclick="closeScoreModal()">Continue</button>
+                    </div>
+    
+                </div>
+            </div>
+    <!-- end of modal of quiz details-->
+    
+            <div class="game-quiz-container">
+    
+                <div class="game-details-container">
+                    <h1>Score : <span id="player-score">0</span> / 10</h1>
+                    <h1> Question : <span id="question-number">1</span> / 10</h1>
+                </div>
+    
+                <div class="game-question-container">
+                    <h1 id="display-question"></h1>
+                </div>
+    
+                <div class="game-options-container">
+    
+                   <div class="modal-container" id="option-modal">
+    
+                        <div class="modal-content-container">
+                             <h1>Please Pick An Option</h1>
+    
+                             <div class="modal-button-container">
+                                <button onclick="closeOptionModal()">Continue</button>
+                            </div>
+    
+                        </div>
+    
+                   </div>
+    
+                    <span>
+                        <input type="radio" id="option-one" name="option" class="radio" value="optionA">
+                        <label for="option-one" class="option" id="option-one-label" style="">180 MILLION</label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="option-two" name="option" class="radio" value="optionB">
+                        <label for="option-two" class="option" id="option-two-label">185 MILLION</label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="option-three" name="option" class="radio" value="optionC">
+                        <label for="option-three" class="option" id="option-three-label">183 MILLION</label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="option-four" name="option" class="radio" value="optionD">
+                        <label for="option-four" class="option" id="option-four-label" style="">181 MILLION</label>
+                    </span>
+    
+    
+                </div>
+    
+                <div class="next-button-container">
+                    <button onclick="handleNextQuestion()">Next Question</button>
+                </div>
+    
+            </div>
+        </main>
+        <script>const questions = [
+        {
+            question: "Which planet in the solar system would be the size of the Minecraft world, if it were real?",
+            optionA: "Neptune",
+            optionB: "Earth",
+            optionC: "Mercury",
+            optionD: "Venus",
+            correctOption: "optionA"
+        },
+    
+        {
+            question: " What is the best-selling game console of all time?",
+            optionA: "Nintendo Switch (OLED Model)",
+            optionB: "PS2",
+            optionC: "Microsoft Xbox Series S",
+            optionD: "Sony PlayStation 5 Digital Edition",
+            correctOption: "optionB"
+        },
+    
+        {
+            question: "Which was the first video game to be played in space?",
+            optionA: "Minecraft.",
+            optionB: "Fortnite.",
+            optionC: "Fall Guys",
+            optionD: " Tetris",
+            correctOption: "optionD"
+        },
+    
+        {
+            question: "What is the most-played video game of all time?",
+            optionA: "League of Legends.",
+            optionB: "PlayerUnknown's Battlegrounds",
+            optionC: "Fortnite",
+            optionD: "CrossFire",
+            correctOption: "optionC"
+        },
+    
+        {
+            question: "Roughly how many people play Roblox each month?",
+            optionA: "100 MILLION",
+            optionB: "200 MILLION",
+            optionC: "250 MILLION",
+            optionD: "150 MILLION",
+            correctOption: "optionD"
+        },
+    
+        {
+            question: " Which game is widely regarded as the worst video game ever created?",
+            optionA: "Atari ET ",
+            optionB: "Gravity Games Bike: Street Vert Dirt ",
+            optionC: "Postal III",
+            optionD: "Game Party Champions ",
+            correctOption: "optionA"
+        },
+    
+        {
+            question: "About how many gamers are there in the US?",
+            optionA: "180 MILLION",
+            optionB: "185 MILLION",
+            optionC: "183 MILLION",
+            optionD: "181 MILLION",
+            correctOption: "optionC"
+        },
+    
+        {
+            question: "Pacman was designed to resemble which food?",
+            optionA: "Pizza",
+            optionB: "Burger",
+            optionC: "Sandwich",
+            optionD: "Cake",
+            correctOption: "optionA"
+        },
+    
+        {
+            question: "Who among the following has written the book \"A Cricket Of My Style\"",
+            optionA: "Sunil Gavaskar",
+            optionB: "Anil Kumble",
+            optionC: "Sachin Tendulkar",
+            optionD: "Kapil Dev",
+            correctOption: "optionD"
+        },
+    
+        {
+            question: "In context of the Indian awards and honors in sports, which among the following is given as Life Time achievement award?",
+            optionA: "Dronacharya Award",
+            optionB: "Rajiv Gandhi Khel Ratna Award",
+            optionC: "Arjuna Award",
+            optionD: "Dhyan Chand Award",
+            correctOption: "optionD"
+        },
+    
+        {
+            question: "What year was the Super Nintendo Entertainment System (SNES) released?",
+            optionA: "1993",
+            optionB: "1992",
+            optionC: "1991",
+            optionD: "1990",
+            correctOption: "optionC"
+        },
+    
+        {
+            question: "What year was the first virtual reality headset created?",
+            optionA: " 1995",
+            optionB: "1997",
+            optionC: "1999",
+            optionD: "2001",
+            correctOption: "optionA"
+        },
+    
+    
+        {
+            question: "What is another word for lexicon?",
+            optionA: "Dictionary",
+            optionB: "Novel",
+            optionC: "Book",
+            optionD: "Letter",
+            correctOption: "optionB"
+        },
+    
+        {
+            question: "Which national team won the football World cup in 2018 ?",
+            optionA: "England",
+            optionB: "Brazil",
+            optionC: "Germany",
+            optionD: "France",
+            correctOption: "optionD"
+        },
+    
+        {
+            question: "Which country hosted a Formula 1 race for the first time in 2011?",
+            optionA: "India",
+            optionB: "California",
+            optionC: "China",
+            optionD: "Los Angeles",
+            correctOption: "optionA"
+        },
+    
+        {
+            question: "When was the ebook invented?",
+            optionA: "1891",
+            optionB: "1030",
+            optionC: "1971",
+            optionD: "1937",
+            correctOption: "optionC"
+        },
+    
+        {
+            question: " How many feet separate the stakes in a game of horseshoes?",
+            optionA: "40",
+            optionB: "50",
+            optionC: "60",
+            optionD: "70",
+            correctOption: "optionA"
+        },
+    
+        {
+            question: "In what sport would you use a pen grip to hold your sandwich bat?",
+            optionA: " Batminton",
+            optionB: " Football",
+            optionC: " Table Tennis",
+            optionD: " Cricket",
+            correctOption: "optionC"
+        },
+    
+        {
+            question: "Which sport has a penalty shot",
+            optionA: "Cricket",
+            optionB: "Soccer",
+            optionC: "Tble Tennis",
+            optionD: "Football",
+            correctOption: "optionD"
+        },
+    
+        {
+
+            question: "When were held the first winter Olympics ?",
+            optionA: "1924",
+            optionB: "1932",
+            optionC: "1902",
+            optionD: "1922",
+            correctOption: "optionA"
+        },
+    
+        {
+           
+
+            question: " Which of the following is NOT a part of the summer Olympics?",
+            optionA: "Boxing",
+            optionB: "Cycling",
+            optionC: "Water Polo",
+            optionD: "Biathlon",
+            correctOption: "optionD"
+        },
+    
+        {
+            question: "Which of the following is not a part of the modern Olympics anymore?",
+            optionA: "Table Tennis",
+            optionB: "Softball",
+            optionC: "Taekwondo",
+            optionD: " Volleyball",
+            correctOption: "optionB"
+        },
+    
+        {
+            
+
+            question: "Which country won the most medals in Olympics since their inception?",
+            optionA: " China",
+            optionB: "Great Britain",
+            optionC: "Soviet Union",
+            optionD: "USA",
+            correctOption: "optionB"
+        },
+    
+        {
+            question: "How many hearts does an Octopus have ?",
+            optionA: "One",
+            optionB: "Two",
+            optionC: "Three",
+            optionD: "Four",
+            correctOption: "optionC"
+        },
+    
+        {
+            question: "How many teeth does an adult human have ?",
+            optionA: "28",
+            optionB: "30",
+            optionC: "32",
+            optionD: "36",
+            correctOption: "optionC"
+        }
+    
+    ]
+    
+    
+    let shuffledQuestions = [] //empty array to hold shuffled selected questions out of all available questions
+    
+    function handleQuestions() { 
+        //function to shuffle and push 10 questions to shuffledQuestions array
+    //app would be dealing with 10questions per session
+        while (shuffledQuestions.length <= 9) {
+            const random = questions[Math.floor(Math.random() * questions.length)]
+            if (!shuffledQuestions.includes(random)) {
+                shuffledQuestions.push(random)
+            }
+        }
+    }
+    
+    
+    let questionNumber = 1 //holds the current question number
+    let playerScore = 0  //holds the player score
+    let wrongAttempt = 0 //amount of wrong answers picked by player
+    let indexNumber = 0 //will be used in displaying next question
+    
+    // function for displaying next question in the array to dom
+    //also handles displaying players and quiz information to dom
+    function NextQuestion(index) {
+        handleQuestions()
+        const currentQuestion = shuffledQuestions[index]
+        document.getElementById("question-number").innerHTML = questionNumber
+        document.getElementById("player-score").innerHTML = playerScore
+        document.getElementById("display-question").innerHTML = currentQuestion.question;
+        document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
+        document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
+        document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
+        document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
+    
+    }
+    
+    
+    function checkForAnswer() {
+        const currentQuestion = shuffledQuestions[indexNumber] //gets current Question 
+        const currentQuestionAnswer = currentQuestion.correctOption //gets current Question's answer
+        const options = document.getElementsByName("option"); //gets all elements in dom with name of 'option' (in this the radio inputs)
+        let correctOption = null
+    
+        options.forEach((option) => {
+            if (option.value === currentQuestionAnswer) {
+                //get's correct's radio input with correct answer
+                correctOption = option.labels[0].id
+            }
+        })
+    
+        //checking to make sure a radio input has been checked or an option being chosen
+        if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
+            document.getElementById('option-modal').style.display = "flex"
+        }
+    
+        //checking if checked radio button is same as answer
+        options.forEach((option) => {
+            if (option.checked === true && option.value === currentQuestionAnswer) {
+                document.getElementById(correctOption).style.backgroundColor = "green"
+                playerScore++ //adding to player's score
+                indexNumber++ //adding 1 to index so has to display next question..
+                //set to delay question number till when next question loads
+                setTimeout(() => {
+                    questionNumber++
+                }, 1000)
+            }
+    
+            else if (option.checked && option.value !== currentQuestionAnswer) {
+                const wrongLabelId = option.labels[0].id
+                document.getElementById(wrongLabelId).style.backgroundColor = "red"
+                document.getElementById(correctOption).style.backgroundColor = "green"
+                wrongAttempt++ //adds 1 to wrong attempts 
+                indexNumber++
+                //set to delay question number till when next question loads
+                setTimeout(() => {
+                    questionNumber++
+                }, 1000)
+            }
+        })
+    }
+    
+    
+    
+    //called when the next button is called
+    function handleNextQuestion() {
+        checkForAnswer() //check if player picked right or wrong option
+        unCheckRadioButtons()
+        //delays next question displaying for a second just for some effects so questions don't rush in on player
+        setTimeout(() => {
+            if (indexNumber <= 9) {
+    //displays next question as long as index number isn't greater than 9, remember index number starts from 0, so index 9 is question 10
+                NextQuestion(indexNumber)
+            }
+            else {
+                handleEndGame()//ends game if index number greater than 9 meaning we're already at the 10th question
+            }
+            resetOptionBackground()
+        }, 1000);
+    }
+    
+    //sets options background back to null after display the right/wrong colors
+    function resetOptionBackground() {
+        const options = document.getElementsByName("option");
+        options.forEach((option) => {
+            document.getElementById(option.labels[0].id).style.backgroundColor = ""
+        })
+    }
+    
+    // unchecking all radio buttons for next question(can be done with map or foreach loop also)
+    function unCheckRadioButtons() {
+        const options = document.getElementsByName("option");
+        for (let i = 0; i < options.length; i++) {
+            options[i].checked = false;
+        }
+    }
+    
+    // function for when all questions being answered
+    function handleEndGame() {
+        let remark = null
+        let remarkColor = null
+    
+        // condition check for player remark and remark color
+        if (playerScore <= 3) {
+            remark = "Bad Grades, Keep Practicing."
+            remarkColor = "red"
+        }
+        else if (playerScore >= 4 && playerScore < 7) {
+            remark = "Average Grades, You can do better."
+            remarkColor = "orange"
+        }
+        else if (playerScore >= 7) {
+            remark = "Excellent, Keep the good work going."
+            remarkColor = "green"
+        }
+        const playerGrade = (playerScore / 10) * 100
+    
+        //data to display to score board
+        document.getElementById('remarks').innerHTML = remark
+        document.getElementById('remarks').style.color = remarkColor
+        document.getElementById('grade-percentage').innerHTML = playerGrade
+        document.getElementById('wrong-answers').innerHTML = wrongAttempt
+        document.getElementById('right-answers').innerHTML = playerScore
+        document.getElementById('score-modal').style.display = "flex"
+    
+    }
+    
+    
+        </script>
+    
+    
+    </div></body></html>

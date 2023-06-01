@@ -1,0 +1,36 @@
+<html><head><style>
+    .card{
+        background: antiquewhite;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    transform: rotateX(0deg) rotateY(0deg);
+        transition:all 0.5s;
+    }
+    .card:hover{
+        transform: rotateX(10deg) rotateY(30deg);
+    }
+    .cardoverlay{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background: red;
+    bottom: 0px;
+    top: 0px;
+    translate: 0px 50%;
+    transition: 0.2s linear;
+
+    }
+    .card:hover .cardoverlay{
+          translate: 0px 0px;
+        
+        
+    }
+</style></head><body>
+    <div class="card"><img src=".\racing image.jpeg" style="">
+<div class="cardoverlay"> aghori
+</div>
+</div>
+</body></html>
